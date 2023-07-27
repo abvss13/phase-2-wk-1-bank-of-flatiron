@@ -25,5 +25,5 @@ src
 
 
 5. Install Axios in this folder. Run `npm install axios` or `yarn add axios`.
-6. Start the React app: Run `npm start`. The app should run on `http://localhost:300/`.
+6. Start the React app: Run `npm start`. The app should run on `http://localhost:3000/`.
 
