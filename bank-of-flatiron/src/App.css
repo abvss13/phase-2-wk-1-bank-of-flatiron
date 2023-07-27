@@ -1,0 +1,252 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #416781;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+.App {
+  text-align: center;
+  background-color: #f2f7fa;
+  color: #444;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #34495e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(16px + 2vmin);
+  color: #fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* TransactionApp component styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  background-color: #f9fcfe;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #777;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2c3e50;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:invalid {
+  border-color: #ff6b6b;
+}
+
+input:valid {
+  border-color: #59cd90;
+}
+
+input:read-only {
+  background-color: #f9f9f9;
+  color: #777;
+}
+
+input:disabled {
+  background-color: #c77e7e;
+  cursor: not-allowed;
+}
+
+input:disabled::placeholder {
+  color: #2d5c83;
+}
+
+input:read-only::placeholder {
+  color: #999;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  background-color: #f2f7fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #2c3e50;
+  color: #a3e9ba;
+}
+
+th,
+td {
+  border: 1px solid #750c0c;
+  padding: 15px;
+  text-align: left;
+}
+
+tbody tr {
+  background-color: #5f8354;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #458383;
+}
+
+tbody tr:hover {
+  background-color: #5f3f3f;
+}
+
+/* Additional styles */
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.container a {
+  color: #085094;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.container .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container .search-bar input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.container .search-bar button {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .search-bar button:hover {
+  background-color: #1d2c3b;
+}
+
+.container .add-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container .add-button button {
+  padding: 12px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .add-button button:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    padding: 10px 16px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}
